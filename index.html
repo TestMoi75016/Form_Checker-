@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-checker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="pseudo-container">
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" />
+        <span></span>
+        <!--Dans les span que j'injecte le msg d'erreur-->
+      </div>
+      <div class="email-container">
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <span>Email incorrect</span>
+      </div>
+      <div class="password-container">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" autocomplete="off" />
+        <p id="progress-bar"></p>
+        <!-- progress-bar modélisée ds le p. (Les <p> sont des éléménts en bloc)-->
+        <span></span>
+      </div>
+      <div class="confirm-container">
+        <label for="confirm">Confirmation du mot de passe</label>
+        <input type="password" id="confirm" autocomplete="off" />
+        <span></span>
+      </div>
+
+      <input type="submit" value="Valider" />
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
